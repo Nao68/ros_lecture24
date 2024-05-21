@@ -8,9 +8,10 @@ import actionlib
 class SimpleGoal:
     def __init__(self):
         self.way_points = [
-            [0.0, -0.5, 0.0],
-            [0.5, -0.5, 0.0],
-            [1.0, -0.5, 3.14]
+            [-0.5, -0.5, 0.0],
+            [0.0, 1.0, 0.0],
+            [1.0, 0.0, 0.0],
+            [0.0, -1.0, 0.0]
         ]
 
         rospy.init_node('simple_goal')
